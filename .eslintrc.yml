@@ -1,13 +1,22 @@
 env:
   browser: true
   es2021: true
+  jest: true
 extends:
   - plugin:react/recommended
   - standard-with-typescript
+  - plugin:import/typescript
 overrides: []
 parserOptions:
   ecmaVersion: latest
+  ecmaFeature:
+    jsx: true
   sourceType: module
+  project: ./tsconfig.json
 plugins:
   - react
+  - "@typescript-eslint"
 rules: {}
+settings:
+  react:
+    version: detect
