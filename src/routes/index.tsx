@@ -5,11 +5,13 @@ import {
 import { Angle, ColorDistance, Defects, Gamma, Gradients, Pattern, ResponseTime, Sharpness, Uniformity } from '../pages'
 
 import Root from '../pages/Root'
+import NotFound from '../pages/Error'
 
 const Router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />
+    element: <Root />,
+    errorElement: <NotFound />
   },
   {
     path: '/angle',
