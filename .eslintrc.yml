@@ -3,7 +3,6 @@ env:
   es2021: true
   jest: true
 extends:
-  - plugin:react/recommended
   - standard-with-typescript
   - plugin:import/typescript
 overrides: []
@@ -14,7 +13,6 @@ parserOptions:
   sourceType: module
   project: ./tsconfig.json
 plugins:
-  - react
   - "@typescript-eslint"
 rules: {}
 settings:
