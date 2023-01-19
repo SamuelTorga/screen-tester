@@ -1,0 +1,7 @@
+lib/
+build/
+dist/
+public/
+cicd/
+cicd-eslint/
+coverage/
