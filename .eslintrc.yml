@@ -3,24 +3,16 @@ env:
   es2021: true
   jest: true
   node: true
-global:
-  __webpack_init_sharing__: readonly
-  __webpack_share_scopes__: readonly
-  strapi: readonly
 extends:
   - standard-with-typescript
   - plugin:import/typescript
   - airbnb
   - airbnb/hooks
-  - plugin:testing-library/recommended
-  - plugin:testing-library/react
   - plugin:jest-dom/recommended
   - plugin:prettier/recommended
   - plugin:@typescript-eslint/recommended
-  - prettier/@typescript-eslint
-  - prettier/react
   - prettier
-parser: @typescript-eslint/parser
+parser: "@typescript-eslint/parser"
 overrides: []
 parserOptions:
   ecmaVersion: latest
@@ -31,10 +23,9 @@ parserOptions:
 plugins:
   - "@typescript-eslint"
   - import-helpers
-  - testing-library
   - jest-dom
-rules: 
-  semi: 'off'
+rules:
+  semi: "off"
   prettier/prettier:
     - error
     - printWidth: 100
@@ -44,25 +35,25 @@ rules:
       arrowParens: always
       semi: false
     - usePrettierrc: false
-  no-await-in-loop: 'off'
-  no-use-before-define: 'off'
-  no-unused-vars: 'off'
-  no-unused-expressions: 'off'
-  no-useless-constructor: 'off'
-  class-methods-use-this: 'off'
+  no-await-in-loop: "off"
+  no-use-before-define: "off"
+  no-unused-vars: "off"
+  no-unused-expressions: "off"
+  no-useless-constructor: "off"
+  class-methods-use-this: "off"
   arrow-body-style:
     - error
     - as-needed
-  no-param-reassign: 'off'
-  no-shadow: 'off'
-  camelcase: 'off'
+  no-param-reassign: "off"
+  no-shadow: "off"
+  camelcase: "off"
   "@typescript-eslint/no-shadow": error
-  "@typescript-eslint/camelcase": 'off'
-  "@typescript-eslint/interface-name-prefix": 'off'
-  "@typescript-eslint/no-use-before-define": 'off'
-  "@typescript-eslint/explicit-function-return-type": 'off'
-  "@typescript-eslint/explicit-module-boundary-types": 'off'
-  "@typescript-eslint/no-var-requires": 'off'
+  "@typescript-eslint/camelcase": "off"
+  "@typescript-eslint/interface-name-prefix": "off"
+  "@typescript-eslint/no-use-before-define": "off"
+  "@typescript-eslint/explicit-function-return-type": "off"
+  "@typescript-eslint/explicit-module-boundary-types": "off"
+  "@typescript-eslint/no-var-requires": "off"
   "@typescript-eslint/no-explicit-any":
     - error
   "@typescript-eslint/no-unused-vars":
@@ -78,23 +69,23 @@ rules:
       controlComponents: []
       assert: either
       depth: 3
-  react/prop-types: 'off'
-  react/jsx-one-expression-per-line: 'off'
-  react/jsx-props-no-spreading: 'off'
+  react/prop-types: "off"
+  react/jsx-one-expression-per-line: "off"
+  react/jsx-props-no-spreading: "off"
   react/jsx-filename-extension:
     - warn
     - extensions:
-      - ".tsx"
-      - ".jsx"
-  react/no-danger: 'off'
+        - ".tsx"
+        - ".jsx"
+  react/no-danger: "off"
   react-hooks/rules-of-hooks: error
   react-hooks/exhaustive-deps: warn
-  global-require: 'off'
-  import/no-dynamic-require: 'off'
-  import/no-unresolved: 'off'
-  import/prefer-default-export: 'off'
-  import/no-duplicates: 'off'
-  import/no-extraneous-dependencies: 'off'
+  global-require: "off"
+  import/no-dynamic-require: "off"
+  import/no-unresolved: "off"
+  import/prefer-default-export: "off"
+  import/no-duplicates: "off"
+  import/no-extraneous-dependencies: "off"
   import/extensions:
     - error
     - ignorePackages
@@ -102,24 +93,24 @@ rules:
       tsx: never
       js: never
       jsx: never
-      '': never
+      "": never
   import-helpers/order-imports:
     - warn
     - newlinesBetween: always
       groups:
-      - "/^react$/"
-      - module
-      - "/^@/"
-      - - parent
-        - sibling
-        - index
+        - "/^react$/"
+        - module
+        - "/^@/"
+        - - parent
+          - sibling
+          - index
       alphabetize:
         order: ignore
         ignoreCase: true
-  no-underscore-dangle: 'off'
-  react/require-default-props: 'off'
+  no-underscore-dangle: "off"
+  react/require-default-props: "off"
 settings:
-  "import/resolver": 
+  "import/resolver":
     typescript:
   react:
     version: detect

@@ -1,9 +1,5 @@
 import React from 'react'
 
-const Uniformity: React.FC = () => {
-  return (
-    <div>Uniformity</div>
-  )
-}
+const Uniformity: React.FC = () => <div>Uniformity</div>
 
 export default Uniformity

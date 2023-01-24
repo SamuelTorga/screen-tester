@@ -17,5 +17,5 @@ export {
   Pattern,
   ResponseTime,
   Sharpness,
-  Uniformity
+  Uniformity,
 }

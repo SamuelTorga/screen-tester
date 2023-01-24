@@ -17,10 +17,10 @@ const ErrorPage: React.FC = () => {
 
   if ((error as ErrorType).status === 404) {
     return (
-    <div id="error-page">
-      <h1>Página não encontrada</h1>
-      <p>A página solicitada não foi encontrada.</p>
-    </div>
+      <div id="error-page">
+        <h1>Página não encontrada</h1>
+        <p>A página solicitada não foi encontrada.</p>
+      </div>
     )
   }
 

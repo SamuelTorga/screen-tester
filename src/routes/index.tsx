@@ -1,9 +1,16 @@
+import { createBrowserRouter } from 'react-router-dom'
+
 import {
-  createBrowserRouter
-} from 'react-router-dom'
-
-import { Angle, ColorDistance, Defects, Gamma, Gradients, Pattern, ResponseTime, Sharpness, Uniformity } from '../pages'
-
+  Angle,
+  ColorDistance,
+  Defects,
+  Gamma,
+  Gradients,
+  Pattern,
+  ResponseTime,
+  Sharpness,
+  Uniformity,
+} from '../pages'
 import Root from '../pages/Root'
 import NotFound from '../pages/Error'
 
@@ -11,44 +18,44 @@ const Router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
-    errorElement: <NotFound />
+    errorElement: <NotFound />,
   },
   {
     path: '/angle',
-    element: <Angle />
+    element: <Angle />,
   },
   {
     path: '/color-distance',
-    element: <ColorDistance />
+    element: <ColorDistance />,
   },
   {
     path: '/defects',
-    element: <Defects />
+    element: <Defects />,
   },
   {
     path: '/gamma',
-    element: <Gamma />
+    element: <Gamma />,
   },
   {
     path: '/gradients',
-    element: <Gradients />
+    element: <Gradients />,
   },
   {
     path: '/pattern',
-    element: <Pattern />
+    element: <Pattern />,
   },
   {
     path: '/response-time',
-    element: <ResponseTime />
+    element: <ResponseTime />,
   },
   {
     path: '/sharpness',
-    element: <Sharpness />
+    element: <Sharpness />,
   },
   {
     path: '/uniformity',
-    element: <Uniformity />
-  }
+    element: <Uniformity />,
+  },
 ])
 
 export default Router
